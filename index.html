@@ -1,0 +1,655 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, shrink-to-fit=no">
+        <meta name="description" content="Gaotian Wang">
+        <meta name="author" content="Gaotian Wang">
+        <title>Litao Liu</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/css?family=Roboto:400,400i,500,500i" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Zilla+Slab:600i" rel="stylesheet">
+        <script defer src="https://use.fontawesome.com/releases/v6.5.1/js/all.js"></script>
+        <link rel="stylesheet" href="https://cdn.rawgit.com/jpswalsh/academicons/master/css/academicons.min.css">
+        <link rel="icon" href="files/icon/icon.svg" type="image/png">
+        <style>
+         #sticky-sidebar {
+             position:fixed;
+             max-width: 20%;
+         }
+         html {
+             height: 100%;
+             width : 100%;
+         }
+         body {
+             height     : 100%;
+             width      : 100%;
+             font-family: 'Trebuchet MS', sans-serif;
+             font-weight: 300;
+             padding-top: 4.5rem;
+         }
+         b {
+             font-weight: 500;
+         }
+         h1, h2, h3, .navbar-brand {
+             font-family: 'Zilla Slab', serif;
+             font-weight: 600;
+             color: #0f4c97;
+         }
+         h3 {
+         }
+         a {
+             color: #0f4c97;
+         }
+         a:hover {
+             color: #1d83ff;
+             text-decoration: none;
+         }
+         a.anchor {
+             display: block;
+             position: relative;
+             top: -70px;
+             visibility: hidden;
+         }
+         .title {
+             font-size: 110%;
+             font-style: italic;
+         }
+         .book {
+             font-size: 110%;
+         }
+         well {
+             margin: 0 auto;
+             width: 100%;
+         }
+         .bg-light {
+             background-color: rgba(213, 220, 255, 0.8) !important;
+         }
+        </style>
+    </head>
+
+    <body data-spy="scroll" data-target=".navbar">
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top bg-light">
+            <a class="navbar-brand" href="#" style="font-size: 1.5em; color: #405888">Litao Liu</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a class="nav-link current" href="#about"><i class="fa fa-user"></i> About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#news"><i class="fa fa-newspaper"></i> News</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#pubs"><i class="fa fa-pen"></i> Publications</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#projects"><i class="fa fa-gear"></i> Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#teaching"><i class="fa fa-chalkboard-teacher"></i> Teaching</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <div class="container mt-4">
+            <div class="row">
+                <div class="col-12 col-xs-8 col-md-9 col-lg-9 col-xl-10 order-last" style="border: 20px solid transparent;">
+                    <a class="anchor" id="about"></a>
+                    <h1>About️  👨‍💼️</h1>
+                    <div style="padding: 10px">
+                        <p>
+                          <a style="font-weight: bold; color: red;">I am actively seeking a Ph.D. position for Fall 2025!</a> My research interests lie at the
+                          intersection of Artificial Intelligence and Robotics, including but not limited to Robot Learning,
+                          Robotic Manipulation, Learning-based Control, Autonomous Vehicles, Intelligent Systems,
+                          and Multi-agent Systems.
+                        </p>
+                        <p>
+                          I received my <a style="font-weight: bold; color: black">Bachelor of Engineering</a> degree from <a href="https://en.scu.edu.cn/" target="_blank">Sichuan University</a> in 2023. During my undergraduate studies, I had the privilege of working with many outstanding professors.
+                          As the first in my family to attend college, I owe my rapid progress to their invaluable guidance and support.
+                          They convinced me of the value of deep research and the meaning of dedicated teaching.
+                        </p>
+                        <p>
+                          After graduation, I spent about six months founding a graduate admissions consulting company,
+                          dedicated to helping college students, particularly those from traditionally underrepresented groups,
+                          bridge the information gap and successfully pursue higher education. Subsequently,
+                          I began preparing my own graduate applications and was fortunate to become a research intern in Robot
+                          Learning with <a href="https://lianwenzhao.github.io/" target="_blank">Professor Lian</a>, successfully entering the field of intelligent robotics, which I have
+                          long been passionate about.
+                        </p>
+                    </div>
+                    <hr>
+
+
+
+<!--                    News Block-->
+                    <a class="anchor" id="news"></a>
+                    <h1>News 📰</h1>
+					<div style="padding: 0px">
+                    <ul>
+                        <li style="display: flex; align-items: flex-start; margin-bottom: 0px;">
+                            <span style="display: inline-block; width: 120px;"><a style="font-weight: bold; color: black">[2024-09-15]</a></span>
+                            <span style="flex: 10;">Two papers (<a href="files/Publications/5.pdf" target="_blank">Paper A</a>, <a href="files/Publications/6.pdf" target="_blank">Paper B</a>) have been submitted to the <a href="https://2025.ieee-icra.org/" target="_blank">IEEE ICRA 2025</a></a>.</span>
+                        </li>
+                        <li style="display: flex; align-items: flex-start; margin-bottom: 0px;">
+                            <span style="display: inline-block; width: 120px;"><a style="font-weight: bold; color: black">[2024-02-28]</a></span>
+                            <span style="flex: 10;">Found my abroad graduate study consulting company <a href="files/Other_material/ToWorld.pdf" target="_blank"> ToWorld</a>.</span>
+                        </li>
+                        <li style="display: flex; align-items: flex-start; margin-bottom: 0px;">
+                            <span style="display: inline-block; width: 120px;"><a style="font-weight: bold; color: black">[2024-02-23]</a></span>
+                            <span style="flex: 10;">Started my journey with robots at the Lab of Professor<a href="https://lianwenzhao.github.io/" target="_blank"> Wenzhao Lian</a>.</span>
+                        </li>
+                        <li style="display: flex; align-items: flex-start; margin-bottom: 0px;">
+                            <span style="display: inline-block; width: 120px;"><a style="font-weight: bold; color: black">[2023-06-20]</a></span>
+                            <span style="flex: 10;">Graduated from the <a href="https://scupi.scu.edu.cn/en/" target="_blank">SCUPI</a> with a B.S. in Engineering and Innovation Class of the <a href="https://idmr.scu.edu.cn/en/" target="_blank">IDMR</a>.</span>
+                        </li>
+                        <li style="display: flex; align-items: flex-start; margin-bottom: 0px;">
+                            <span style="display: inline-block; width: 120px;"><a style="font-weight: bold; color: black">[2023-06]</a></span>
+                            <span style="flex: 10;">Awarded the <a style="font-weight: bold; color: black">Outstanding Graduate, Sichuan Province</a>.</span>
+                        </li>
+                        <li style="display: flex; align-items: flex-start; margin-bottom: 0px;">
+                            <span style="display: inline-block; width: 120px;"><a style="font-weight: bold; color: black">[2022-12]</a></span>
+                            <span style="flex: 10;">Awarded the <a style="font-weight: bold; color: black">National Scholarship</a> in the 2021-2022 academic year.</span>
+                        </li>
+                        <li style="display: flex; align-items: flex-start; margin-bottom: 0px;">
+                            <span style="display: inline-block; width: 120px;"><a style="font-weight: bold; color: black">[2022-12-11]</a></span>
+                            <span style="flex: 10;">One <a href="files/Publications/4.pdf" target="_blank">paper</a> was published at <a href="http://2022.ictocs.com/" target="_blank">IEEE TOCS 2022</a></a>.</span>
+                        </li>
+                        <li style="display: flex; align-items: flex-start; margin-bottom: 0px;">
+                            <span style="display: inline-block; width: 120px;"><a style="font-weight: bold; color: black">[2022-10]</a></span>
+                            <span style="flex: 10;">Awarded the <a style="font-weight: bold; color: black">Outstanding Graduate, Sichuan University</a>.</span>
+                        </li>
+                        <li style="display: flex; align-items: flex-start; margin-bottom: 0px;">
+                            <span style="display: inline-block; width: 120px;"><a style="font-weight: bold; color: black">[2022-10-14]</a></span>
+                            <span style="flex: 10;">One <a href="files/Publications/3.pdf" target="_blank">paper</a> was published at <a href="https://www.icgeesd.cn/page/GEESD2022" target="_blank">GEESD 2022</a></a>.</span>
+                        </li>
+                        <li style="display: flex; align-items: flex-start; margin-bottom: 0px;">
+                            <span style="display: inline-block; width: 120px;"><a style="font-weight: bold; color: black">[2022-09-27]</a></span>
+                            <span style="flex: 10;">Awarded the <a style="font-weight: bold; color: black">Dean's List</a> at <a href="https://scupi.scu.edu.cn/en/" target="_blank">SCUPI</a> in the 2021-2022 academic year.</span>
+                        </li>
+                        <li style="display: flex; align-items: flex-start; margin-bottom: 0px;">
+                            <span style="display: inline-block; width: 120px;"><a style="font-weight: bold; color: black">[2022-08-18]</a></span>
+                            <span style="flex: 10;">My first journal <a href="files/Publications/2.pdf" target="_blank">paper</a> was published at <a href="https://www.mdpi.com/1424-8220/22/16/6207" target="_blank">Sensors</a></a>.</span>
+                        </li>
+                        <li style="display: flex; align-items: flex-start; margin-bottom: 0px;">
+                            <span style="display: inline-block; width: 120px;"><a style="font-weight: bold; color: black">[2022-06-27]</a></span>
+                            <span style="flex: 10;">My first conference <a href="files/Publications/1.pdf" target="_blank">paper</a> was published at <a href="https://www.acaib.org/?&utm_medium=researchbib" target="_blank">ACAIB 2022</a></a>.</span>
+                        </li>
+                        <li style="display: flex; align-items: flex-start; margin-bottom: 0px;">
+                            <span style="display: inline-block; width: 120px; font-weight: bold; color: black;">[2020-09]</span>
+                            <span style="flex: 10;">Joined the International Disaster Reduction and Emergency Management <a style="font-weight: bold; color: black">Innovation Class</a> at Sichuan University - The Hong Kong Polytechnic University Institute for Disaster Management and Reconstruction (<a href="https://idmr.scu.edu.cn/en/" target="_blank">IDMR</a>) as an undergraduate researcher.</span>
+                        </li>
+                        <li style="display: flex; align-items: flex-start; margin-bottom: 0px;">
+                            <span style="display: inline-block; width: 120px;"><a style="font-weight: bold; color: black">[2019-09]</a></span>
+                            <span style="flex: 10;">Started my undergraduate study at Sichuan University-Pittsburgh Institute (<a href="https://scupi.scu.edu.cn/en/" target="_blank">SCUPI</a>).</span>
+                        </li>
+
+                    </ul>
+                    </div>
+
+
+                    <hr>
+
+                    <a class="anchor" id="pubs"></a>
+                    <h1>Publications ✒️</h1>
+
+                    <div style="padding: 10px">
+                        <a id="journals" class="anchor"></a>
+                        <div>
+                            <dl class="row">
+                                <h3 class="col-lg-12 col-xl-1">2024</h3>
+
+                                <dt class="col-1" style="text-align:right;">C2.</dt>
+                                <dd class="col-md-11 col-xl-10">
+                                    <div class="row">
+                                        <!-- Main content column (4/5 width) -->
+                                        <div class="col-8">
+                                            <p>
+                                                <font class="title">FoAM: Foresight-Augmented Multi-Task Imitation Policy for Robotic Manipulation</font>
+                                                <br>
+                                                <nobr style="font-weight: bold;">Litao Liu</nobr>, <nobr>Wentao Wang</nobr>, <nobr>Yifan Han</nobr>, <nobr>Zhuoli Xie</nobr>, <nobr>Pengfei Yi</nobr>, <nobr>Junyan Li</nobr>, <nobr>Yi Qin</nobr>, <nobr>Wenzhao Lian*</nobr>
+                                                <br>
+                                                <em>arXiv preprint, Under Review for the ICRA 2025</em>
+                                            </p>
+                                            <p>
+                                                <a href="#ren2024collisionbibtex" data-toggle="collapse">Bibtex</a> <b>/ </b>
+                                                <a href="#ren2024collisionabstract" data-toggle="collapse">Abstract</a> <b>/ </b>
+                                                <a href="https://arxiv.org/pdf/2409.19528"><i class="fa fa-file-pdf"></i> PDF</a> <b>/ </b>
+                                                <a href="https://www.youtube.com/watch?v=2k12C872BxM"><i class="fa fa-video"></i> Video</a> <b>/ </b>
+                                                <a href="https://www.youtube.com/watch?v=NxHyLqYKbPY"><i class="fa fa-link"></i> Homepage</a>
+                                            </p>
+                                            <div id="ren2024collisionabstract" class="collapse">
+                                                <div class="well">
+                                                    <p>Multi-task imitation learning (MTIL) has shown significant potential in robotic manipulation by enabling agents to perform various tasks using a unified policy. This simplifies the policy deployment and enhances the agent's adaptability across different contexts. However, key challenges remain, such as maintaining action reliability (e.g., avoiding abnormal action sequences that deviate from nominal task trajectories), distinguishing between similar tasks, and generalizing to unseen scenarios. To address these challenges, we introduce the Foresight-Augmented Manipulation Policy (FoAM), an innovative MTIL framework. FoAM not only learns to mimic expert actions but also predicts the visual outcomes of those actions to enhance decision-making. Additionally, it integrates multi-modal goal inputs, such as visual and language prompts, overcoming the limitations of single-conditioned policies. We evaluated FoAM across over 100 tasks in both simulation and real-world settings, demonstrating that it significantly improves IL policy performance, outperforming current state-of-the-art IL baselines by up to 41% in success rate. Furthermore, we released a simulation benchmark for robotic manipulation, featuring 10 task suites and over 80 challenging tasks designed for multi-task policy training and evaluation.</p>
+                                                </div>
+                                                <p><a href="#ren2024collisionabstract" data-toggle="collapse">Close</a></p>
+                                            </div>
+                                            <div id="ren2024collisionbibtex" class="collapse">
+                                                <div class="well">
+                                                    <pre>@misc{liu2024foamforesightaugmentedmultitaskimitation,
+            title={FoAM: Foresight-Augmented Multi-Task Imitation Policy for Robotic Manipulation},
+            author={Litao Liu and Wentao Wang and Yifan Han and Zhuoli Xie and Pengfei Yi and Junyan Li and Yi Qin and Wenzhao Lian},
+            year={2024},
+            eprint={2409.19528},
+            archivePrefix={arXiv},
+            primaryClass={cs.RO},
+            url={https://arxiv.org/abs/2409.19528},
+        }</pre>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- GIF column (1/5 width) -->
+                                        <div class="col-4">
+                                            <img src="files/Publications_GIF/2024C2.gif"
+                                                class="img-fluid" 
+                                                alt="Collision-inclusive Planning demonstration"
+                                                style="width: 100%; margin-top: 0px;">
+                                        </div>
+                                    </div>
+                                </dd>
+                                <h3 class="col-lg-12 col-xl-1"></h3>
+                                <dt class="col-1" style="text-align:right;">C1.</dt>
+                                <dd class="col-md-11 col-xl-10">
+                                    <div class="row">
+                                        <!-- Main content column (4/5 width) -->
+                                        <div class="col-8">
+                                            <p>
+                                                <font class="title">Viewpoint Matters: Dynamically Optimizing Viewpoints with Masked Autoencoder for Visual Manipulation</font>
+                                                <br>
+                                                <nobr>Pengfei Yi</nobr>, <nobr>Yifan Han</nobr>, <nobr>Junyan Li</nobr>, <nobr style="font-weight: bold;">Litao Liu</nobr>, <nobr>Wenzhao Lian*</nobr>
+                                                <br>
+                                                <em>Under Review for the ICRA 2025</em>
+                                            </p>
+                                            <p>
+                                                <a href="#ren2024objectcentricbibtex" data-toggle="collapse">Bibtex</a> <b>/ </b>
+                                                <a href="#ren2024objectcentricabstract" data-toggle="collapse">Abstract</a> <b>/ </b>
+                                                <a href="files/Publications_pdf/2024C1.pdf"><i class="fa fa-file-pdf"></i> PDF</a> <b>/ </b>
+                                                <a href="https://sites.google.com/view/mae-select"><i class="fa fa-link"></i> Homepage</a>
+
+                                            </p>
+                                            <div id="ren2024objectcentricabstract" class="collapse">
+                                                <div class="well">
+                                                    <p>Robotic manipulation continues to be a complex challenge, with imitation learning (IL) offering an effective way for robots to learn tasks from expert demonstrations. Current IL methods typically rely on fixed camera setups—either multi-camera systems, which may introduce redundant or noisy data, or single-camera systems, which suffer from limited viewpoints, constraining task performance. Inspired by human active perception, where humans dynamically adjust their viewpoint to capture the most relevant and least noisy information, we propose MAE-Select, a novel framework for active viewpoint selection in single-camera robotic systems. MAE-Select fully leverages pre-trained multi-view masked autoencoder representations and dynamically selects the next most informative viewpoint at each time chunk without requiring labeled viewpoints. This plug-and-play approach enhances learning efficiency and task performance. Extensive experiments demonstrate that MAE-Select improves the capabilities of single-camera systems and, in some cases, even surpasses multi-camera setups.</p>
+                                                </div>
+                                                <p><a href="#ren2024objectcentricabstract" data-toggle="collapse">Close</a></p>
+                                            </div>
+                                            <div id="ren2024objectcentricbibtex" class="collapse">
+                                                <div class="well">
+                                                    <pre></pre>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- GIF column (1/5 width) -->
+                                        <div class="col-4">
+                                            <img src="files/Publications_GIF/2024C1.gif"
+                                                 class="img-fluid" 
+                                                 alt="Object-Centric Planning demonstration"
+                                                 style="width: 100%; margin-top: 0px;">
+                                        </div>
+                                    </div>
+                                </dd>
+                                <h3 class="col-lg-12 col-xl-1"></h3>
+                                
+                            </dl>
+                        </div>
+                        
+                        <div>
+                            <a class="anchor" id="9851517"></a>
+                        </div>
+                        <div>
+                            
+                        </div>
+                        <div>
+                            <a class="anchor" id="10354732"></a>
+                            <dl class="row">
+                            </dl>
+                        </div>
+                        <div>
+                            <a class="anchor" id="9739524"></a>
+                            <dl class="row">
+                                <h3 class="col-lg-12 col-xl-1">2022</h3>
+                                <dt class="col-1" style="text-align:right;">J1.</dt>
+                                <dd class="col-md-11 col-xl-10">
+                                    <div class="row">
+                                        <!-- Main content column (4/5 width) -->
+                                        <div class="col-8">
+                                            <p>
+                                                <font class="title">Comprehensive Engineering Frequency Domain Analysis and Vibration Suppression of Flexible Aircraft Based on Active Disturbance Rejection Controller</font>
+                                                <br>
+                                                <nobr style="font-weight: bold;">Litao Liu</nobr>, <nobr>Bingwei Tian</nobr>
+                                                <br>
+                                                <em>Sensors</em>
+                                            </p>
+                                            <p>
+                                                <a href="#9739524bibtex" data-toggle="collapse">Bibtex</a> <b>/ </b>
+                                                <a href="#9739524abstract" data-toggle="collapse">Abstract</a> <b>/ </b>
+                                                <a href="files/Publications_pdf/2022J1.pdf"><i class="fa fa-file-pdf"></i> PDF</a> <b>/ </b>
+                                                <a href="https://doi.org/10.3390/s22166207"><i class="ai ai-doi"></i> Publisher</a>
+                                            </p>
+                                            <div id="9739524abstract" class="collapse">
+                                                <div class="well">
+                                                    <p>The crash of an aircraft with an almost vertical attitude in Wuzhou, Guangxi, China, on 21 March 2022, has caused a robust discussion in the civil aviation community. We propose an active disturbance rejection controller (ADRC) for suppressing aeroelastic vibrations of a flexible aircraft at the simulation level. The ADRC has a relatively simple structure and it has been proved in several fields to provide better control than the classical proportional-integral-derivative (PID) control theory and is easier to translate from theory to practice compared with other modern control theories. In this paper, the vibration model of the flexible aircraft was built, based on the first elastic vibration mode of the aircraft. In addition, the principle of ADRC is explained in detail, a second-order ADRC was designed to control the vibration model, and the system’s closed-loop frequency domain characteristics, tracking effect and sensitivity were comprehensively analyzed. The estimation error of the extended state observer (ESO) and the anti-disturbance effect were analyzed, while the robustness of the closed-loop system was verified using the Monte Carlo method, which was used for the first time in this field. Simulation results showed that the ADRC suppressed aircraft elastic vibration better than PID controllers and that the closed-loop system was robust in the face of dynamic parameters.</p>
+                                                </div>
+                                                <p><a href="#9739524abstract" data-toggle="collapse">Close</a></p>
+                                            </div>
+                                            <div id="9739524bibtex" class="collapse">
+                                                <div class="well">
+                                                    <pre>@article{liu2022comprehensive,
+  title={Comprehensive Engineering Frequency Domain Analysis and Vibration Suppression of Flexible Aircraft Based on Active Disturbance Rejection Controller},
+  author={Liu, Litao and Tian, Bingwei},
+  journal={Sensors},
+  volume={22},
+  number={16},
+  pages={6207},
+  year={2022},
+  publisher={MDPI}
+}
+                                              </pre>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- GIF column (1/5 width) -->
+                                        <div class="col-4">
+                                            <img src="files/Publications_GIF/2022J1.webp"
+                                                 class="img-fluid"
+                                                 alt="Soft Robot RL demonstration"
+                                                 style="width: 100%; margin-top: 0px;">
+                                        </div>
+                                    </div>
+                                </dd>
+                            </dl>
+                        </div>
+                    </div>
+                    <hr>
+
+                    <!-- Projects Section -->
+                    <a class="anchor" id="projects"></a>
+                    <h1>Projects ⚙️</h1>
+                    <div style="padding: 10px">
+                        <dl>
+
+                            <div class="row">
+                                <!-- Project Column -->
+                                <div class="col-md-6">
+                                    <dt style="font-size: 1.12em;">Exploration of Multi-Task Imitation Learning Policy </dt>
+                                    <ul>
+                                        <li>Integrated a vision-language model within FoAM, enabling the agent to leverage language prompts and initial visual observation to acquire multi-goal conditions autonomously. This approach overcomes the limitations of single-condition policies and effectively generalizes to unseen tasks. </li>
+                                        <li>Proposed the Foresight-Augmented module, which predicts the consequence of actions and learns the differences between current visual observations and corresponding goal images, enhancing task activation success rates in multi-task learning. </li>
+
+                                    </ul>
+                                </div>
+                                <!-- Video Column -->
+                                <div class="col-md-6">
+                                    <video width="420" height="240" autoplay muted controls>
+                                        <source src="files/Project_Materials/FoAM.mp4" type="video/mp4">
+                                        Your browser does not support the video tag.
+                                    </video>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <!-- Project Column -->
+                                <div class="col-md-6">
+                                    <dt style="font-size: 1.12em;">Develop High-Performance Heat Exchanger with Bionically Inspired Porous Structure</dt>
+                                    <ul>
+                                        <li>Designed a bionically inspired heat exchanger (HX) featuring an F-RD porous structure. Utilized ANSYS-ICEM and CFX to perform simulation experiments, uncovering the internal flow mechanisms and heat transfer characteristics of the F-RD HX.</li>
+                                        <li>Demonstrated that the F-RD achieves comparable heat transfer efficiency while significantly outperforming the S-D in mechanical properties, highlighting its potential as an ideal solution for applications requiring both superior heat transfer performance and mechanical durability.</li>
+                                        <li>Explored hybrid bionic structures for HXs to improve design flexibility and enhance performance control.</li>
+                                    </ul>
+                                </div>
+                                <!-- Video Column -->
+                                <div class="col-md-6">
+                                    <video width="420" height="240" autoplay muted controls>
+                                        <source src="files/Project_Materials/HeatExchanger.mp4" type="video/mp4">
+                                        Your browser does not support the video tag.
+                                    </video>
+                                </div>
+                            </div>
+
+
+                        </dl>
+                    </div>
+                    <hr>
+
+
+                    <!-- Experience Section -->
+<!--                    <a class="anchor" id="experience"></a>-->
+<!--                    <h1>Experience 🧗</h1>-->
+<!--                    <div class="row">-->
+<!--                        &lt;!&ndash; Education Column &ndash;&gt;-->
+<!--                        <div class="col-md-6">-->
+<!--                            <h2>Education</h2>-->
+<!--                            <div style="padding: 10px">-->
+<!--                                <dt>Rice University | 2022 - Present</dt>-->
+<!--                                <dt><em><small>Houston, TX</small></em></dt>-->
+<!--                                <dd>-->
+<!--                                    <ul>-->
+<!--                                        <li>Ph.D. in Computer Science</li>-->
+<!--                                        <li>Advisor: <a href="https://hangkaiyu.github.io/">Dr. Kaiyu Hang</a></li>-->
+<!--                                    </ul>-->
+<!--                                </dd>-->
+<!--                                <dt>University of Science and Technology of China</dt>-->
+<!--                                <dt>USTC | 2018 - 2022</dt>-->
+<!--                                <dt><em><small>Hefei, China</small></em></dt>-->
+<!--                                <ul>-->
+<!--                                    <li>B.S. in Optical Engineering</li>-->
+<!--                                    <li>Thesis: <em>A Randomized Kinodynamic Planner for Soft Robots based on Piecewise Universal Joint Model</em></li>-->
+<!--                                    <li>Advisor: <a href="http://staff.ustc.edu.cn/~nfr/">Dr. Nikolaos M. Freris</a></li>-->
+<!--                                </ul>-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                        &lt;!&ndash; Research Column &ndash;&gt;-->
+<!--                        <div class="col-md-6">-->
+<!--                            <h2>Research</h2>-->
+<!--                            <div style="padding: 10px">-->
+<!--                                <dt><a href="https://robotpilab.github.io/">Robot∏ Lab</a> | Sep.2022 - Present</dt>-->
+<!--                                <dt><em><small>Rice University, Houston, TX</small></em></dt>-->
+<!--                                <dd>-->
+<!--                                    <ul>-->
+<!--                                        <li>Graduate Student</li>-->
+<!--                                        <li>Advisor: Dr. Kaiyu Hang</li>-->
+<!--                                    </ul>-->
+<!--                                </dd>-->
+<!--                                <dt><a href="http://staff.ustc.edu.cn/~nfr/Flyer%20-%20AIoT%20-%20English.pdf">AIoT Lab</a> | Nov.2021 - Jun.2022</dt>-->
+<!--                                <dt><em><small>USTC, Hefei, China</small></em></dt>-->
+<!--                                <dd>-->
+<!--                                    <ul>-->
+<!--                                        <li>Undergraduate Researcher</li>-->
+<!--                                        <li>Advisor: Dr. Nikolaos M. Freris</li>-->
+<!--                                    </ul>-->
+<!--                                </dd>-->
+<!--                                <dt><a href="https://www.epfl.ch/labs/rrl/">Reconfigurable Robotics Lab</a> | Apr.2021 - Sep.2021</dt>-->
+<!--                                <dt><em><small>EPFL, Lausanne ,Switzerland</small></em></dt>-->
+<!--                                <dd>-->
+<!--                                    <ul>-->
+<!--                                        <li>Guest Researcher</li>-->
+<!--                                        <li>Supervisor: Dr. Fabio Zuliani and Dr. Jamie Paik</li>-->
+<!--                                    </ul>-->
+<!--                                </dd>-->
+<!--                                <dt><a href="https://sites.google.com/view/softrobot">USTC Soft Robotics Lab</a> | Aug.2020 - Oct.2021</dt>-->
+<!--                                <dt><em><small>USTC, Hefei, China</small></em></dt>-->
+<!--                                <dd>-->
+<!--                                    <ul>-->
+<!--                                        <li>Undergraduate Researcher</li>-->
+<!--                                        <li>Advisor: Dr. Hao Jiang and Dr. Xiaoping Chen</li>-->
+<!--                                    </ul>-->
+<!--                                </dd>-->
+<!--                                -->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                    <hr>-->
+
+
+                    <!-- <h1>Work Experience</h1>-->
+                    <a class="anchor" id="teaching"></a>
+                    <h1>Teaching 🧑‍🏫</h1>
+                    <div style="padding-top: 10px; padding-left: 100px;">
+                        <dl>
+                            <dt><b><a style="font-weight: bold; color: black">2023 Spring</a></b></dt>
+                            <dd>
+                                <ul>
+                                    <li>
+                                        Teaching Assistant for <a href="files/TA_Proof/TA_SCUPI.pdf"><b>Electric Circuits</b></a>
+                                        <br>
+                                        <em><small>Class MEMS 0031 at Sichuan University - Pittsburgh Institute</small></em>
+                                    </li>
+                                    <li>
+                                        Teaching Assistant for <a href="files/TA_Proof/TA_SCUPI.pdf"><b>Introduction to Fluid Mechanics</b></a>
+                                        <br>
+                                        <em><small>Class ME 0071 at Sichuan University - Pittsburgh Institute</small></em>
+                                    </li>
+                                </ul>
+                            </dd>
+                            <dt><b><a style="font-weight: bold; color: black">2022 Fall</a></b></dt>
+                            <dd>
+                                <ul>
+                                    <li>
+                                        Teaching Assistant for <a href="files/TA_Proof/TA_SCUPI.pdf"><b>Statics and Mechanics of Material I</b></a>
+                                        <br>
+                                        <em><small>Class ENGR0135 at Sichuan University - Pittsburgh Institute</small></em>
+                                    </li>
+                                    <li>
+                                        Teaching Assistant for <a href="files/TA_Proof/TA_SCUPI.pdf"><b>Introduction to Fluid Mechanics</b></a>
+                                        <br>
+                                        <em><small>Class ME 0071 at Sichuan University - Pittsburgh Institute</small></em>
+                                    </li>
+                                    <li>
+                                        Teaching Assistant for <a href="files/TA_Proof/TA_SCUPI.pdf"><b>Introduction to Mechanical Design</b></a>
+                                        <br>
+                                        <em><small>Class MEMS0024 at Sichuan University - Pittsburgh Institute</small></em>
+                                    </li>
+                                </ul>
+                            </dd>
+                            <dt><b><a style="font-weight: bold; color: black">2022 Spring</a></b></dt>
+                            <dd>
+                                <ul>
+                                    <li>
+                                        Teaching Assistant for <a href="files/TA_Proof/TA_SCUPI.pdf"><b>Statics and Mechanics of Material II</b></a>
+                                        <br>
+                                        <em><small>Class ENGR0145 at Sichuan University - Pittsburgh Institute</small></em>
+                                    </li>
+                                </ul>
+                            </dd>
+                            <dt><b><a style="font-weight: bold; color: black">2021 Fall</a></b></dt>
+                            <dd>
+                                <ul>
+                                    <li>
+                                        Teaching Assistant for <a href="files/TA_Proof/TA_SCUPI.pdf"><b>Introduction to Mechanical Design</b></a>
+                                        <br>
+                                        <em><small>Class MEMS0024 at Sichuan University - Pittsburgh Institute</small></em>
+                                    </li>
+                                </ul>
+                            </dd>
+                            <dt><b><a style="font-weight: bold; color: black">2021 Spring</a></b></dt>
+                            <dd>
+                                <ul>
+                                    <li>
+                                        Teaching Assistant for <a href="files/TA_Proof/TA_SCUPI.pdf"><b>Physics for Science and Engineering I</b></a>
+                                        <br>
+                                        <em><small>Class PHYS 0174 at Sichuan University - Pittsburgh Institute</small></em>
+                                    </li>
+                                </ul>
+                            </dd>
+                        </dl>
+                    </div>
+                    <hr>
+<!--                    <a class="anchor" id="Hobbies"></a> -->
+<!--                    <h1>Life 🏔️🧗‍🏂🛹🏜️🗽⛹️🚀</h1>-->
+<!--                    We bring robots to life, but life is more than robots.-->
+<!--                    <div style="display: flex; justify-content: space-around;">-->
+<!--                        <div class="slider" style="display: flex; justify-content: center; align-items: center; position: relative; width: 500px; height: 600px;">-->
+<!--                            <img id="slide1" src="images/3.jpg" style="position: absolute; transition: opacity 1s; opacity: 1;max-height: 95%;">-->
+<!--                            <img id="slide2" src="images/4.jpg" style="position: absolute; transition: opacity 1s; opacity: 0; max-height: 95%;">-->
+<!--                        </div>-->
+<!--                        <div class="slider" style="display: flex; justify-content: center; align-items: center; position: relative; width: 500px; height: 600px;">-->
+<!--                            <img id="slide3" src="images/1.jpg" style="position: absolute; transition: opacity 1s; opacity: 1;max-height: 95%;">-->
+<!--                            <img id="slide4" src="images/2.jpg" style="position: absolute; transition: opacity 1s; opacity: 0; max-height: 95%;">-->
+<!--                        </div>-->
+<!--                    </div>-->
+
+                    <script>
+                        var images = ["images/0.jpg", "images/1.jpg", "images/2.jpg", "images/3.jpg", "images/4.jpg", "images/5.jpg", "images/6.jpg", "images/7.jpg", "images/8.jpg", "images/9.jpg", "images/10.jpg", "images/11.jpg", "images/12.jpg", "images/13.jpg", "images/14.jpg", "images/15.jpg", "images/16.jpg", "images/17.jpg", "images/18.jpg", "images/19.jpg", "images/20.jpg", "images/21.jpg", "images/22.jpg", "images/23.jpg", "images/24.jpg", "images/25.jpg", "images/26.jpg", "images/27.jpg", "images/28.jpg", "images/29.jpg",]; // replace with your images
+                        var index = 0;
+
+                        function slide(slide1Id, slide2Id) {
+                            var slide1 = document.getElementById(slide1Id);
+                            var slide2 = document.getElementById(slide2Id);
+
+                            slide1.src = images[index];
+                            slide2.src = images[(index + 1) % images.length];
+
+                            slide1.style.opacity = 1;
+                            slide2.style.opacity = 0;
+
+                            setTimeout(function() {
+                                slide2.style.opacity = 1;
+                                slide1.style.opacity = 0;
+                            }, 200);
+
+                            index = (index + 1) % images.length;
+                        }
+
+                        setInterval(function() {
+                            slide("slide1", "slide2");
+                            slide("slide3", "slide4");
+                        }, 3000); // change image every 3 seconds
+                    </script>
+                </div>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <hr>
+                <div class="col-12 col-xs-4 col-md-3 col-lg-3 col-xl-2">
+                    <div class="row">
+                        <div class="col-3 col-xs-0 col-md-0 col-lg-0 col-xl-0">
+                        </div>
+                        <div class="col-6 col-xs-12 col-md-12 col-lg-12 col-xl-12">
+                            <p>
+                                <img src   = "files/MyPhoto/LitaoLiu.jpg"
+                                     class = "img-fluid full-width"
+                                     alt   = "A picture of me from February 2024."
+                                     style="margin-top: 40px;"
+                                >
+                            </p>
+                        </div>
+                        <div class="col-3 col-xs-0 col-md-0 col-lg-0 col-xl-0">
+                        </div>
+                        <div class="col-3 col-xs-0 col-md-0 col-lg-0 col-xl-0">
+                        </div>
+                        <div class="col-6 col-xs-12 col-md-12 col-lg-12 col-xl-12">
+                            <br>
+                            <dl class="row" style="margin-left: -30px;">
+                                <dt class="col-3"><a href="https://scholar.google.com/citations?user=r_CvWNYAAAAJ&hl=en&authuser=1"><i class="ai ai-google-scholar ai-2x"></i></a></dt>
+                                <dt class="col-3"><a href="https://www.linkedin.com/in/litao-liu-004025297/"><i class="fab fa-linkedin fa-2x"></i></a></dt>
+                                <dt class="col-3"><a href="https://github.com/LitaoLiu01"><i class="fab fa-github fa-2x"></i></a></dt>
+                                <dt class="col-3"><a href="files/CV/CV_LitaoLIU.pdf"><i class="ai ai-cv ai-2x"></i></a></dt>
+                            </dl>
+                            <dl class="row">
+                            </dl>
+                            <dl class="row" style="margin-left: -30px;">
+                                <dt class="col-2"><i class="fa fa-envelope fa-fw blue"></i></dt>
+                                <dd class="col-10"><p>liulitao6688@gmail.com</p></dd>
+                            </dl>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <footer>
+                <p></p>
+                <p style="line-height:normal;">Website design inspired by Gaotian Wang <a href="https://github.com/Vector-Wangel/vector-wangel.github.io">(source code)</a> and <a href="https://zkingston.com/">Zak Kingston</a></p>
+            </footer>
+        </div>
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    </body>
+</html>
