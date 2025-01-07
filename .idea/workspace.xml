@@ -5,13 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3e4a5ddf-9114-4452-b15b-bfb3d6a453b0" name="更改" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/deployment.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/files/Publications_GIF/2023T1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/files/Publications_pdf/2023T1.pdf" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
@@ -72,7 +65,8 @@
       <option name="presentableId" value="Default" />
       <updated>1736246572194</updated>
       <workItem from="1736246573461" duration="7773000" />
-      <workItem from="1736259502290" duration="1785000" />
+      <workItem from="1736259502290" duration="3110000" />
+      <workItem from="1736267940356" duration="94000" />
     </task>
     <servers />
   </component>
