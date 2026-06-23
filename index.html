@@ -31,7 +31,7 @@
       <nav class="nav-links" aria-label="Primary navigation">
         <a href="#about" data-i18n="nav.about">About</a>
         <a href="#news" data-i18n="nav.news">News</a>
-        <a href="#talks" data-i18n="nav.talks">Talks</a>
+        <a href="#presentations" data-i18n="nav.presentations">Presentations</a>
         <a href="#publications" data-i18n="nav.publications">Publications</a>
         <a href="#projects" data-i18n="nav.projects">Projects</a>
         <a href="#teaching" data-i18n="nav.teaching">Teaching</a>
@@ -47,7 +47,6 @@
     <main id="home">
       <section class="hero section-shell" id="about" aria-labelledby="heroTitle">
         <div class="hero-copy">
-          <p class="eyebrow" data-i18n="hero.eyebrow">Rutgers CS Ph.D. Student | Robot Learning</p>
           <h1 id="heroTitle">Litao Liu <span>(刘力滔)</span></h1>
           <p class="hero-lede" data-i18n="hero.lede">
             I build learning-based robotic systems that connect perception, language, and action for real-world manipulation.
@@ -67,20 +66,6 @@
               <span data-i18n="hero.ctaContact">Contact me</span>
             </button>
             <span class="hero-copy-feedback" id="heroEmailFeedback" aria-live="polite"></span>
-          </div>
-
-          <div class="hero-about-card">
-            <div class="hero-about-heading">
-              <p class="eyebrow" data-i18n="sections.aboutEyebrow">About</p>
-              <h2 data-i18n="sections.aboutTitle">About Me</h2>
-            </div>
-            <div class="about-copy">
-              <p data-i18n-html="about.p1"></p>
-              <p data-i18n-html="about.p2"></p>
-              <p data-i18n-html="about.p3"></p>
-              <p class="cooperation-note" data-i18n-html="about.p4"></p>
-              <p class="internship-note" data-i18n-html="about.p5"></p>
-            </div>
           </div>
         </div>
 
@@ -103,6 +88,20 @@
             <p class="copy-feedback" id="copyEmailFeedback" aria-live="polite"></p>
           </div>
         </aside>
+
+        <div class="hero-about-card">
+          <div class="hero-about-heading">
+            <p class="eyebrow" data-i18n="sections.aboutEyebrow">About</p>
+            <h2 data-i18n="sections.aboutTitle">About Me</h2>
+          </div>
+          <div class="about-copy">
+            <p data-i18n-html="about.p1"></p>
+            <p data-i18n-html="about.p2"></p>
+            <p data-i18n-html="about.p3"></p>
+            <p class="cooperation-note" data-i18n-html="about.p4"></p>
+            <p class="internship-note" data-i18n-html="about.p5"></p>
+          </div>
+        </div>
       </section>
 
       <section class="section-shell" id="news" aria-labelledby="newsTitle">
@@ -116,25 +115,33 @@
         <div class="timeline" id="newsList"></div>
       </section>
 
-      <section class="section-shell" id="talks" aria-labelledby="talksTitle">
+      <section class="section-shell" id="presentations" aria-labelledby="presentationsTitle">
         <div class="section-heading horizontal">
           <div>
-            <p class="eyebrow" data-i18n="sections.talksEyebrow">Invited</p>
-            <h2 id="talksTitle" data-i18n="sections.talksTitle">Invited Talks</h2>
+            <p class="eyebrow" data-i18n="sections.presentationsEyebrow">Academic</p>
+            <h2 id="presentationsTitle" data-i18n="sections.presentationsTitle">Presentations</h2>
           </div>
-          <span class="section-note" data-i18n="sections.talksNote">Research seminars and invited presentations</span>
+          <span class="section-note" data-i18n="sections.presentationsNote">Oral presentations and posters</span>
         </div>
-        <div class="talk-list">
-          <article class="talk-card">
-            <div class="talk-date">2026</div>
-            <div class="talk-content">
-              <h3 data-i18n-html="talks.a2aTitle">Affordance2Action: Task-Conditioned Scene-level Affordance Grounding for Real-Time Manipulation</h3>
-              <p data-i18n-html="talks.a2aHost"></p>
-              <div class="talk-actions">
-                <a href="https://arxiv.org/pdf/2606.04172" target="_blank" rel="noreferrer"><i class="fa-solid fa-file-pdf"></i> A2A Paper</a>
-                <a href="https://scholar.google.com/citations?user=kj5HiGgAAAAJ&hl=zh-CN" target="_blank" rel="noreferrer"><i class="ai ai-google-scholar"></i> Changqing Zou</a>
-              </div>
-            </div>
+        <div class="presentation-groups">
+          <article class="presentation-group">
+            <h3 data-i18n="presentations.talkLabel">Oral / Invited Talk</h3>
+            <ul class="presentation-list">
+              <li data-i18n-html="presentations.foamOral">
+                <a href="https://projfoam.github.io/" target="_blank" rel="noreferrer">FoAM: Foresight-Augmented Multi-Task Imitation Policy for Robotic Manipulation</a>. AAAI 2026 Oral Presentation. Singapore EXPO Convention &amp; Exhibition Centre. (Jan. 2026)
+              </li>
+              <li data-i18n-html="presentations.a2aTalk">
+                <a href="https://jingjinyu.com/a2a/" target="_blank" rel="noreferrer">Affordance2Action (A2A): Task-Conditioned Scene-level Affordance Grounding for Real-Time Manipulation</a>. AiXM Group, ZJU (Online). (Jun. 2026)
+              </li>
+            </ul>
+          </article>
+          <article class="presentation-group">
+            <h3 data-i18n="presentations.posterLabel">Poster</h3>
+            <ul class="presentation-list">
+              <li data-i18n-html="presentations.foamPoster">
+                <a href="https://projfoam.github.io/" target="_blank" rel="noreferrer">FoAM: Foresight-Augmented Multi-Task Imitation Policy for Robotic Manipulation</a>. AAAI 2026 Poster. Singapore EXPO Convention &amp; Exhibition Centre. (Jan. 2026)
+              </li>
+            </ul>
           </article>
         </div>
       </section>
