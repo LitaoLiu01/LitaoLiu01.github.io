@@ -1,9 +1,6 @@
 const STORAGE_KEYS = {
   theme: "litao-theme",
   lang: "litao-lang",
-  visits: "litao-local-visits",
-  likes: "litao-local-likes",
-  liked: "litao-liked",
 };
 
 const translations = {
@@ -25,11 +22,6 @@ const translations = {
     profile: {
       role: "Ph.D. Student, Computer Science",
       school: '<a href="https://www.rutgers.edu/" target="_blank" rel="noreferrer">Rutgers University-New Brunswick</a>',
-    },
-    metrics: {
-      localViews: "Visits",
-      likes: "Likes",
-      totalViews: "Total page views",
     },
     sections: {
       aboutEyebrow: "Profile",
@@ -97,11 +89,6 @@ const translations = {
     profile: {
       role: "计算机科学博士生",
       school: '<a href="https://www.rutgers.edu/" target="_blank" rel="noreferrer">罗格斯大学新布朗斯维克校区</a>',
-    },
-    metrics: {
-      localViews: "访问",
-      likes: "点赞",
-      totalViews: "总访问量",
     },
     sections: {
       aboutEyebrow: "个人简介",
@@ -688,34 +675,6 @@ function renderAll() {
   renderTeaching();
 }
 
-function initLocalCounter() {
-  const current = Number(localStorage.getItem(STORAGE_KEYS.visits) || "0") + 1;
-  localStorage.setItem(STORAGE_KEYS.visits, String(current));
-  document.getElementById("localViewCount").textContent = String(current);
-}
-
-function initLikeCounter() {
-  const button = document.getElementById("likeButton");
-  const count = document.getElementById("likeCount");
-  const liked = localStorage.getItem(STORAGE_KEYS.liked) === "true";
-  const likes = Number(localStorage.getItem(STORAGE_KEYS.likes) || "0");
-
-  count.textContent = String(likes);
-  button.classList.toggle("is-liked", liked);
-
-  button.addEventListener("click", () => {
-    const wasLiked = localStorage.getItem(STORAGE_KEYS.liked) === "true";
-    const currentLikes = Number(localStorage.getItem(STORAGE_KEYS.likes) || "0");
-    const nextLiked = !wasLiked;
-    const nextLikes = Math.max(0, currentLikes + (nextLiked ? 1 : -1));
-
-    localStorage.setItem(STORAGE_KEYS.liked, String(nextLiked));
-    localStorage.setItem(STORAGE_KEYS.likes, String(nextLikes));
-    count.textContent = String(nextLikes);
-    button.classList.toggle("is-liked", nextLiked);
-  });
-}
-
 function initEmailCopy() {
   const buttons = document.querySelectorAll("[data-copy-email]");
   buttons.forEach((button) => {
@@ -736,20 +695,6 @@ function initEmailCopy() {
       }, 2200);
     });
   });
-}
-
-function initExternalCounter() {
-  const counter = document.getElementById("externalViewCounter");
-  const isLocal = ["localhost", "127.0.0.1", "0.0.0.0", ""].includes(window.location.hostname);
-  if (isLocal) {
-    counter?.classList.add("is-hidden");
-    return;
-  }
-
-  const script = document.createElement("script");
-  script.async = true;
-  script.src = "https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js";
-  document.body.appendChild(script);
 }
 
 function bindEvents() {
@@ -797,8 +742,5 @@ function bindEvents() {
 
 applyTheme();
 applyLanguage();
-initLocalCounter();
-initLikeCounter();
 initEmailCopy();
-initExternalCounter();
 bindEvents();
