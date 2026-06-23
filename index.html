@@ -31,6 +31,7 @@
       <nav class="nav-links" aria-label="Primary navigation">
         <a href="#about" data-i18n="nav.about">About</a>
         <a href="#news" data-i18n="nav.news">News</a>
+        <a href="#talks" data-i18n="nav.talks">Talks</a>
         <a href="#publications" data-i18n="nav.publications">Publications</a>
         <a href="#projects" data-i18n="nav.projects">Projects</a>
         <a href="#teaching" data-i18n="nav.teaching">Teaching</a>
@@ -61,10 +62,11 @@
               <i class="fa-solid fa-pen-nib"></i>
               <span data-i18n="hero.ctaPublications">View publications</span>
             </a>
-            <a class="button secondary" href="mailto:litao.liu@rutgers.edu">
+            <button class="button secondary" id="heroEmailButton" type="button" data-copy-email="litao.liu@rutgers.edu" data-feedback="heroEmailFeedback">
               <i class="fa-solid fa-envelope"></i>
               <span data-i18n="hero.ctaContact">Contact me</span>
-            </a>
+            </button>
+            <span class="hero-copy-feedback" id="heroEmailFeedback" aria-live="polite"></span>
           </div>
 
           <div class="hero-about-card">
@@ -77,6 +79,7 @@
               <p data-i18n-html="about.p2"></p>
               <p data-i18n-html="about.p3"></p>
               <p class="cooperation-note" data-i18n-html="about.p4"></p>
+              <p class="internship-note" data-i18n-html="about.p5"></p>
             </div>
           </div>
         </div>
@@ -93,7 +96,7 @@
               <a href="https://scholar.google.com/citations?user=r_CvWNYAAAAJ&hl=en&authuser=1" aria-label="Google Scholar" target="_blank" rel="noreferrer"><i class="ai ai-google-scholar"></i></a>
               <a href="https://www.linkedin.com/in/litao-liu-004025297/" aria-label="LinkedIn" target="_blank" rel="noreferrer"><i class="fa-brands fa-linkedin-in"></i></a>
               <a href="https://github.com/LitaoLiu01" aria-label="GitHub" target="_blank" rel="noreferrer"><i class="fa-brands fa-github"></i></a>
-              <button class="social-button" id="copyEmailButton" type="button" aria-label="Copy email address" data-email="litao.liu@rutgers.edu">
+              <button class="social-button" id="copyEmailButton" type="button" aria-label="Copy email address" data-copy-email="litao.liu@rutgers.edu" data-feedback="copyEmailFeedback">
                 <i class="fa-solid fa-envelope"></i>
               </button>
             </div>
@@ -127,6 +130,29 @@
           <span class="section-note" data-i18n="sections.newsNote">Selected academic updates</span>
         </div>
         <div class="timeline" id="newsList"></div>
+      </section>
+
+      <section class="section-shell" id="talks" aria-labelledby="talksTitle">
+        <div class="section-heading horizontal">
+          <div>
+            <p class="eyebrow" data-i18n="sections.talksEyebrow">Invited</p>
+            <h2 id="talksTitle" data-i18n="sections.talksTitle">Invited Talks</h2>
+          </div>
+          <span class="section-note" data-i18n="sections.talksNote">Research seminars and invited presentations</span>
+        </div>
+        <div class="talk-list">
+          <article class="talk-card">
+            <div class="talk-date">2026</div>
+            <div class="talk-content">
+              <h3 data-i18n-html="talks.a2aTitle">Affordance2Action: Task-Conditioned Scene-level Affordance Grounding for Real-Time Manipulation</h3>
+              <p data-i18n-html="talks.a2aHost"></p>
+              <div class="talk-actions">
+                <a href="https://arxiv.org/pdf/2606.04172" target="_blank" rel="noreferrer"><i class="fa-solid fa-file-pdf"></i> A2A Paper</a>
+                <a href="https://scholar.google.com/citations?user=kj5HiGgAAAAJ&hl=zh-CN" target="_blank" rel="noreferrer"><i class="ai ai-google-scholar"></i> Changqing Zou</a>
+              </div>
+            </div>
+          </article>
+        </div>
       </section>
 
       <section class="section-shell" id="publications" aria-labelledby="pubTitle">

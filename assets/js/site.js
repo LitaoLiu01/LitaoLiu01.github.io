@@ -11,6 +11,7 @@ const translations = {
     nav: {
       about: "About",
       news: "News",
+      talks: "Talks",
       publications: "Publications",
       projects: "Projects",
       teaching: "Teaching",
@@ -36,6 +37,9 @@ const translations = {
       newsEyebrow: "Timeline",
       newsTitle: "Recent News",
       newsNote: "Selected academic updates",
+      talksEyebrow: "Invited",
+      talksTitle: "Invited Talks",
+      talksNote: "Research seminars and invited presentations",
       pubEyebrow: "Selected work",
       pubTitle: "Publications",
       projectEyebrow: "Built systems",
@@ -48,8 +52,13 @@ const translations = {
       p2: 'I received my Bachelor of Engineering from <a href="https://en.scu.edu.cn/" target="_blank" rel="noreferrer">Sichuan University</a> in 2023. As a first-generation college student, I learned to navigate research through uncertainty and persistence. I was fortunate to work with mentors whose guidance shaped both my technical taste and my appreciation for rigorous teaching.',
       p3: 'Before starting my Ph.D., I co-founded <a href="assets/docs/other/toworld.pdf" target="_blank" rel="noreferrer">ToWorld</a>, a graduate admissions consulting company that helps students, especially those from traditionally underrepresented backgrounds, reduce information barriers and pursue graduate education abroad.',
       p4: 'I am open to related research collaborations. Please feel free to contact me at <a class="highlight-email" href="mailto:litao.liu@rutgers.edu">litao.liu@rutgers.edu</a>.',
+      p5: 'I am also actively open to robotics, robot learning, and embodied AI internship opportunities.',
       focusLabel: "Current focus",
       focusText: "Foresight-augmented policies, real-world reinforcement learning, and embodied foundation models for robotic manipulation.",
+    },
+    talks: {
+      a2aTitle: '<a href="https://arxiv.org/pdf/2606.04172" target="_blank" rel="noreferrer">Affordance2Action: Task-Conditioned Scene-level Affordance Grounding for Real-Time Manipulation</a>',
+      a2aHost: 'Invited by the <a href="https://www.zju.edu.cn/english/" target="_blank" rel="noreferrer">Zhejiang University</a> AiXM research group, hosted by Prof. <a href="https://scholar.google.com/citations?user=kj5HiGgAAAAJ&hl=zh-CN" target="_blank" rel="noreferrer">Changqing Zou</a>.',
     },
     footer: {
       credit: "Designed and maintained by Litao Liu.",
@@ -74,6 +83,7 @@ const translations = {
     nav: {
       about: "简介",
       news: "动态",
+      talks: "报告",
       publications: "论文",
       projects: "项目",
       teaching: "教学",
@@ -99,6 +109,9 @@ const translations = {
       newsEyebrow: "时间线",
       newsTitle: "近期动态",
       newsNote: "精选学术更新",
+      talksEyebrow: "受邀报告",
+      talksTitle: "Invited Talks",
+      talksNote: "学术报告与受邀分享",
       pubEyebrow: "代表工作",
       pubTitle: "论文发表",
       projectEyebrow: "系统实践",
@@ -111,8 +124,13 @@ const translations = {
       p2: '我于 2023 年获得<a href="https://en.scu.edu.cn/" target="_blank" rel="noreferrer">四川大学</a>工学学士学位。作为第一代大学生，我的学术道路充满探索与不确定性，也因此更加珍惜多位导师在关键阶段给予的指导。他们帮助我建立了对深入研究和认真教学的理解。',
       p3: '本科毕业后，我曾共同创办留学申请咨询公司 <a href="assets/docs/other/toworld.pdf" target="_blank" rel="noreferrer">ToWorld</a>，致力于帮助大学生，尤其是来自信息资源相对不足背景的学生，降低信息差并追求海外研究生教育机会。',
       p4: '我欢迎相关研究合作机会。欢迎通过 <a class="highlight-email" href="mailto:litao.liu@rutgers.edu">litao.liu@rutgers.edu</a> 联系我。',
+      p5: '我也正在积极寻找机器人、机器人学习与具身智能方向的实习机会。',
       focusLabel: "当前关注",
       focusText: "面向机器人操作的预见增强策略、真实世界强化学习，以及具身基础模型。",
+    },
+    talks: {
+      a2aTitle: '<a href="https://arxiv.org/pdf/2606.04172" target="_blank" rel="noreferrer">Affordance2Action: Task-Conditioned Scene-level Affordance Grounding for Real-Time Manipulation</a>',
+      a2aHost: '受<a href="https://www.zju.edu.cn/english/" target="_blank" rel="noreferrer">浙江大学</a> AiXM 课题组邀请，由 <a href="https://scholar.google.com/citations?user=kj5HiGgAAAAJ&hl=zh-CN" target="_blank" rel="noreferrer">Changqing Zou（邹常青）</a> 导师主持。',
     },
     footer: {
       credit: "由 Litao Liu 设计并维护。",
@@ -699,24 +717,24 @@ function initLikeCounter() {
 }
 
 function initEmailCopy() {
-  const button = document.getElementById("copyEmailButton");
-  const feedback = document.getElementById("copyEmailFeedback");
-  if (!button || !feedback) return;
+  const buttons = document.querySelectorAll("[data-copy-email]");
+  buttons.forEach((button) => {
+    const feedback = document.getElementById(button.dataset.feedback);
+    button.addEventListener("click", async () => {
+      const email = button.dataset.copyEmail;
+      try {
+        await navigator.clipboard.writeText(email);
+        if (feedback) feedback.textContent = t("ui.copiedEmail");
+        button.classList.add("is-copied");
+      } catch {
+        if (feedback) feedback.textContent = t("ui.copyFailed");
+      }
 
-  button.addEventListener("click", async () => {
-    const email = button.dataset.email;
-    try {
-      await navigator.clipboard.writeText(email);
-      feedback.textContent = t("ui.copiedEmail");
-      button.classList.add("is-copied");
-    } catch {
-      feedback.textContent = t("ui.copyFailed");
-    }
-
-    window.setTimeout(() => {
-      feedback.textContent = "";
-      button.classList.remove("is-copied");
-    }, 2200);
+      window.setTimeout(() => {
+        if (feedback) feedback.textContent = "";
+        button.classList.remove("is-copied");
+      }, 2200);
+    });
   });
 }
 

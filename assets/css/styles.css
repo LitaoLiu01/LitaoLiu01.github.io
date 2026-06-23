@@ -350,7 +350,9 @@ h3 {
   gap: 10px;
   min-height: 48px;
   padding: 0 18px;
+  border: 0;
   border-radius: 999px;
+  cursor: pointer;
   font-weight: 800;
 }
 
@@ -363,6 +365,14 @@ h3 {
   border: 1px solid var(--border);
   background: var(--bg-elevated);
   color: var(--text);
+}
+
+.hero-copy-feedback {
+  align-self: center;
+  min-width: 96px;
+  color: var(--accent-strong);
+  font-size: 0.84rem;
+  font-weight: 900;
 }
 
 .profile-panel {
@@ -570,6 +580,15 @@ h3 {
   font-weight: 700;
 }
 
+.internship-note {
+  padding: 14px 16px;
+  border: 1px solid color-mix(in srgb, var(--rose) 30%, var(--border));
+  border-radius: var(--radius);
+  background: color-mix(in srgb, var(--rose) 11%, transparent);
+  color: var(--text);
+  font-weight: 800;
+}
+
 .about-copy a.highlight-email {
   color: var(--rose);
   border-bottom-color: color-mix(in srgb, var(--rose) 55%, transparent);
@@ -660,6 +679,66 @@ h3 {
 .timeline-text {
   padding-left: 20px;
   color: var(--text);
+}
+
+.talk-list {
+  display: grid;
+  gap: 16px;
+}
+
+.talk-card {
+  display: grid;
+  grid-template-columns: 118px minmax(0, 1fr);
+  gap: 22px;
+  padding: 22px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background: color-mix(in srgb, var(--bg-elevated) 94%, transparent);
+  box-shadow: var(--shadow-soft);
+}
+
+.talk-date {
+  color: var(--gold);
+  font-size: 1rem;
+  font-weight: 900;
+}
+
+.talk-content h3 {
+  margin: 0;
+  font-size: 1.18rem;
+  line-height: 1.35;
+}
+
+.talk-content h3 a,
+.talk-content p a {
+  color: var(--accent-strong);
+  border-bottom: 1px solid color-mix(in srgb, var(--accent) 38%, transparent);
+}
+
+.talk-content p {
+  margin: 10px 0 0;
+  color: var(--muted);
+}
+
+.talk-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 14px;
+}
+
+.talk-actions a {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  min-height: 34px;
+  padding: 0 11px;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  background: var(--bg-soft);
+  color: var(--text);
+  font-size: 0.82rem;
+  font-weight: 900;
 }
 
 .filter-pills {
@@ -1046,6 +1125,12 @@ h3 {
 
   .timeline-text {
     padding-left: 14px;
+  }
+
+  .talk-card {
+    grid-template-columns: 1fr;
+    gap: 8px;
+    padding: 18px;
   }
 
   .publication-card {
