@@ -412,20 +412,13 @@ h3 {
   object-position: center;
 }
 
-.portrait-wrap:hover .portrait-primary,
-.portrait-wrap:focus .portrait-primary {
+.portrait-wrap:hover .portrait-primary {
   opacity: 0;
 }
 
-.portrait-wrap:hover .portrait-hover,
-.portrait-wrap:focus .portrait-hover {
+.portrait-wrap:hover .portrait-hover {
   opacity: 1;
   transform: scale(1.02);
-}
-
-.portrait-wrap:focus-visible {
-  outline: 3px solid var(--accent);
-  outline-offset: -3px;
 }
 
 .profile-content {
