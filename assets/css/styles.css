@@ -155,7 +155,9 @@ input {
   align-items: center;
   justify-content: center;
   flex: 1;
+  flex-wrap: wrap;
   gap: clamp(12px, 2vw, 28px);
+  row-gap: 6px;
 }
 
 .nav-links a {
@@ -620,12 +622,14 @@ h3 {
   color: var(--text);
 }
 
-.presentation-groups {
+.presentation-groups,
+.service-groups {
   display: grid;
   gap: 18px;
 }
 
-.presentation-group {
+.presentation-group,
+.service-group {
   padding: 22px;
   border: 1px solid var(--border);
   border-radius: var(--radius);
@@ -633,7 +637,8 @@ h3 {
   box-shadow: var(--shadow-soft);
 }
 
-.presentation-group h3 {
+.presentation-group h3,
+.service-group h3 {
   margin: 0 0 12px;
   color: var(--gold);
   font-size: 0.92rem;
@@ -641,19 +646,22 @@ h3 {
   text-transform: uppercase;
 }
 
-.presentation-list {
+.presentation-list,
+.service-list {
   display: grid;
   gap: 12px;
   margin: 0;
   padding-left: 20px;
 }
 
-.presentation-list li {
+.presentation-list li,
+.service-list li {
   color: var(--text);
   line-height: 1.6;
 }
 
-.presentation-list a {
+.presentation-list a,
+.service-list a {
   color: var(--accent-strong);
   font-weight: 900;
   border-bottom: 1px solid color-mix(in srgb, var(--accent) 38%, transparent);
@@ -1045,7 +1053,8 @@ h3 {
     padding-left: 14px;
   }
 
-  .presentation-group {
+  .presentation-group,
+  .service-group {
     padding: 18px;
   }
 
