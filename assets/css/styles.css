@@ -391,16 +391,41 @@ h3 {
 }
 
 .portrait-wrap {
+  position: relative;
   aspect-ratio: 1 / 1;
   overflow: hidden;
   background: var(--bg-soft);
 }
 
 .portrait {
+  position: absolute;
+  inset: 0;
   width: 100%;
   height: 100%;
   object-fit: cover;
   object-position: center 18%;
+  transition: opacity 220ms ease, transform 420ms ease;
+}
+
+.portrait-daily {
+  opacity: 0;
+  object-position: center 45%;
+}
+
+.portrait-wrap:hover .portrait-primary,
+.portrait-wrap:focus .portrait-primary {
+  opacity: 0;
+}
+
+.portrait-wrap:hover .portrait-daily,
+.portrait-wrap:focus .portrait-daily {
+  opacity: 1;
+  transform: scale(1.02);
+}
+
+.portrait-wrap:focus-visible {
+  outline: 3px solid var(--accent);
+  outline-offset: -3px;
 }
 
 .profile-content {
