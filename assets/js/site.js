@@ -50,8 +50,8 @@ const translations = {
     presentations: {
       talkLabel: "Oral / Invited Talk",
       posterLabel: "Poster",
-      foamOral: '<a href="https://projfoam.github.io/" target="_blank" rel="noreferrer">FoAM: Foresight-Augmented Multi-Task Imitation Policy for Robotic Manipulation</a>. AAAI 2026 Oral Presentation. Singapore EXPO Convention & Exhibition Centre. (Jan. 2026)',
       a2aTalk: '<a href="https://jingjinyu.com/a2a/" target="_blank" rel="noreferrer">Affordance2Action (A2A): Task-Conditioned Scene-level Affordance Grounding for Real-Time Manipulation</a>. AiXM Group, ZJU (Online). (Jun. 2026)',
+      foamOral: '<a href="https://projfoam.github.io/" target="_blank" rel="noreferrer">FoAM: Foresight-Augmented Multi-Task Imitation Policy for Robotic Manipulation</a>. AAAI 2026 Oral Presentation. Singapore EXPO Convention & Exhibition Centre. (Jan. 2026)',
       foamPoster: '<a href="https://projfoam.github.io/" target="_blank" rel="noreferrer">FoAM: Foresight-Augmented Multi-Task Imitation Policy for Robotic Manipulation</a>. AAAI 2026 Poster. Singapore EXPO Convention & Exhibition Centre. (Jan. 2026)',
     },
     footer: {
@@ -119,8 +119,8 @@ const translations = {
     presentations: {
       talkLabel: "口头报告 / 受邀报告",
       posterLabel: "海报",
-      foamOral: '<a href="https://projfoam.github.io/" target="_blank" rel="noreferrer">FoAM: Foresight-Augmented Multi-Task Imitation Policy for Robotic Manipulation</a>. AAAI 2026 Oral Presentation. Singapore EXPO Convention & Exhibition Centre. (2026 年 1 月)',
       a2aTalk: '<a href="https://jingjinyu.com/a2a/" target="_blank" rel="noreferrer">Affordance2Action (A2A): Task-Conditioned Scene-level Affordance Grounding for Real-Time Manipulation</a>. AiXM Group, ZJU (Online). (2026 年 6 月)',
+      foamOral: '<a href="https://projfoam.github.io/" target="_blank" rel="noreferrer">FoAM: Foresight-Augmented Multi-Task Imitation Policy for Robotic Manipulation</a>. AAAI 2026 Oral Presentation. Singapore EXPO Convention & Exhibition Centre. (2026 年 1 月)',
       foamPoster: '<a href="https://projfoam.github.io/" target="_blank" rel="noreferrer">FoAM: Foresight-Augmented Multi-Task Imitation Policy for Robotic Manipulation</a>. AAAI 2026 Poster. Singapore EXPO Convention & Exhibition Centre. (2026 年 1 月)',
     },
     footer: {
