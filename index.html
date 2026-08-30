@@ -46,6 +46,28 @@
     </header>
 
     <main id="home">
+      <aside class="profile-panel" aria-label="Profile card">
+        <div class="portrait-wrap">
+          <img src="assets/img/profile/litao-liu.webp" alt="Portrait of Litao Liu" class="portrait portrait-primary">
+          <img src="assets/img/profile/litao-liu-winter-crop.webp" alt="" class="portrait portrait-hover" aria-hidden="true" loading="lazy">
+        </div>
+        <div class="profile-content">
+          <h2>Litao Liu</h2>
+          <p data-i18n="profile.role">Ph.D. Student, Computer Science</p>
+          <p data-i18n-html="profile.school">Rutgers University-New Brunswick</p>
+          <div class="socials" aria-label="Academic and social links">
+            <a href="https://scholar.google.com/citations?user=r_CvWNYAAAAJ&hl=en&authuser=1" aria-label="Google Scholar" target="_blank" rel="noreferrer"><i class="ai ai-google-scholar"></i></a>
+            <a href="https://www.linkedin.com/in/litao-liu-004025297/" aria-label="LinkedIn" target="_blank" rel="noreferrer"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="https://github.com/LitaoLiu01" aria-label="GitHub" target="_blank" rel="noreferrer"><i class="fa-brands fa-github"></i></a>
+            <button class="social-button" id="copyEmailButton" type="button" aria-label="Copy email address" data-copy-email="litao.liu@rutgers.edu" data-feedback="copyEmailFeedback">
+              <i class="fa-solid fa-envelope"></i>
+            </button>
+          </div>
+          <p class="copy-feedback" id="copyEmailFeedback" aria-live="polite"></p>
+        </div>
+      </aside>
+
+      <div class="page-content">
       <section class="hero section-shell" id="about" aria-labelledby="heroTitle">
         <div class="hero-copy">
           <h1 id="heroTitle">Litao Liu <span>(刘力滔)</span></h1>
@@ -69,27 +91,6 @@
             <span class="hero-copy-feedback" id="heroEmailFeedback" aria-live="polite"></span>
           </div>
         </div>
-
-        <aside class="profile-panel" aria-label="Profile card">
-          <div class="portrait-wrap">
-            <img src="assets/img/profile/litao-liu.webp" alt="Portrait of Litao Liu" class="portrait portrait-primary">
-            <img src="assets/img/profile/litao-liu-winter-crop.webp" alt="" class="portrait portrait-hover" aria-hidden="true" loading="lazy">
-          </div>
-          <div class="profile-content">
-            <h2>Litao Liu</h2>
-            <p data-i18n="profile.role">Ph.D. Student, Computer Science</p>
-            <p data-i18n-html="profile.school">Rutgers University-New Brunswick</p>
-            <div class="socials" aria-label="Academic and social links">
-              <a href="https://scholar.google.com/citations?user=r_CvWNYAAAAJ&hl=en&authuser=1" aria-label="Google Scholar" target="_blank" rel="noreferrer"><i class="ai ai-google-scholar"></i></a>
-              <a href="https://www.linkedin.com/in/litao-liu-004025297/" aria-label="LinkedIn" target="_blank" rel="noreferrer"><i class="fa-brands fa-linkedin-in"></i></a>
-              <a href="https://github.com/LitaoLiu01" aria-label="GitHub" target="_blank" rel="noreferrer"><i class="fa-brands fa-github"></i></a>
-              <button class="social-button" id="copyEmailButton" type="button" aria-label="Copy email address" data-copy-email="litao.liu@rutgers.edu" data-feedback="copyEmailFeedback">
-                <i class="fa-solid fa-envelope"></i>
-              </button>
-            </div>
-            <p class="copy-feedback" id="copyEmailFeedback" aria-live="polite"></p>
-          </div>
-        </aside>
 
         <div class="hero-about-card">
           <div class="hero-about-heading">
@@ -161,12 +162,17 @@
             <h3 data-i18n="service.peerReviewerLabel">Peer Reviewer</h3>
             <ul class="service-list">
               <li data-i18n-html="service.fullPaperReviewer">
-                <strong>Conference Full-Paper Reviewer</strong> (16 reviews):
+                <strong>Conference Full-Paper Reviewer</strong> (20 reviews):
+                <a href="https://aaai.org/conference/aaai/aaai-27/" target="_blank" rel="noreferrer">AAAI 2027</a> (4 reviews),
                 <a href="https://www.corl.org/" target="_blank" rel="noreferrer">CoRL 2026</a> (3 reviews),
                 <a href="https://2026.ieee-iros.org/" target="_blank" rel="noreferrer">IROS 2026</a> (2 reviews),
-                <a href="https://icml.cc/Conferences/2026" target="_blank" rel="noreferrer">ICML 2026</a> (6 reviews, Golden Reviewer),
+                <a href="https://icml.cc/Conferences/2026" target="_blank" rel="noreferrer">ICML 2026</a> (6 reviews, <strong>Golden Reviewer</strong>),
                 <a href="https://aaai.org/conference/aaai/aaai-26/" target="_blank" rel="noreferrer">AAAI 2026</a> (4 reviews),
                 <a href="https://iros25.org/" target="_blank" rel="noreferrer">IROS 2025</a> (1 review)
+              </li>
+              <li data-i18n-html="service.journalReviewer">
+                <strong>Journal Reviewer</strong> (1 review):
+                <a href="https://link.springer.com/journal/12369" target="_blank" rel="noreferrer">International Journal of Social Robotics</a> (1 review)
               </li>
             </ul>
           </article>
@@ -199,6 +205,7 @@
         </div>
         <div class="teaching-list" id="teachingList"></div>
       </section>
+      </div>
     </main>
 
     <footer class="footer section-shell">

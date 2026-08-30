@@ -60,7 +60,8 @@ const translations = {
     },
     service: {
       peerReviewerLabel: "Peer Reviewer",
-      fullPaperReviewer: '<strong>Conference Full-Paper Reviewer</strong> (16 reviews): <a href="https://www.corl.org/" target="_blank" rel="noreferrer">CoRL 2026</a> (3 reviews), <a href="https://2026.ieee-iros.org/" target="_blank" rel="noreferrer">IROS 2026</a> (2 reviews), <a href="https://icml.cc/Conferences/2026" target="_blank" rel="noreferrer">ICML 2026</a> (6 reviews, Golden Reviewer), <a href="https://aaai.org/conference/aaai/aaai-26/" target="_blank" rel="noreferrer">AAAI 2026</a> (4 reviews), <a href="https://iros25.org/" target="_blank" rel="noreferrer">IROS 2025</a> (1 review)',
+      journalReviewer: '<strong>Journal Reviewer</strong> (1 review): <a href="https://link.springer.com/journal/12369" target="_blank" rel="noreferrer">International Journal of Social Robotics</a> (1 review)',
+      fullPaperReviewer: '<strong>Conference Full-Paper Reviewer</strong> (20 reviews): <a href="https://aaai.org/conference/aaai/aaai-27/" target="_blank" rel="noreferrer">AAAI 2027</a> (4 reviews), <a href="https://www.corl.org/" target="_blank" rel="noreferrer">CoRL 2026</a> (3 reviews), <a href="https://2026.ieee-iros.org/" target="_blank" rel="noreferrer">IROS 2026</a> (2 reviews), <a href="https://icml.cc/Conferences/2026" target="_blank" rel="noreferrer">ICML 2026</a> (6 reviews, <strong>Golden Reviewer</strong>), <a href="https://aaai.org/conference/aaai/aaai-26/" target="_blank" rel="noreferrer">AAAI 2026</a> (4 reviews), <a href="https://iros25.org/" target="_blank" rel="noreferrer">IROS 2025</a> (1 review)',
     },
     footer: {
       credit: "Designed and maintained by Litao Liu.",
@@ -137,7 +138,8 @@ const translations = {
     },
     service: {
       peerReviewerLabel: "审稿人",
-      fullPaperReviewer: '<strong>会议全文审稿人</strong>（16 篇评审）：<a href="https://www.corl.org/" target="_blank" rel="noreferrer">CoRL 2026</a>（3 篇），<a href="https://2026.ieee-iros.org/" target="_blank" rel="noreferrer">IROS 2026</a>（2 篇），<a href="https://icml.cc/Conferences/2026" target="_blank" rel="noreferrer">ICML 2026</a>（6 篇，Golden Reviewer），<a href="https://aaai.org/conference/aaai/aaai-26/" target="_blank" rel="noreferrer">AAAI 2026</a>（4 篇），<a href="https://iros25.org/" target="_blank" rel="noreferrer">IROS 2025</a>（1 篇）',
+      journalReviewer: '<strong>期刊审稿人</strong>（1 篇评审）：<a href="https://link.springer.com/journal/12369" target="_blank" rel="noreferrer">International Journal of Social Robotics</a>（1 篇）',
+      fullPaperReviewer: '<strong>会议全文审稿人</strong>（20 篇评审）：<a href="https://aaai.org/conference/aaai/aaai-27/" target="_blank" rel="noreferrer">AAAI 2027</a>（4 篇），<a href="https://www.corl.org/" target="_blank" rel="noreferrer">CoRL 2026</a>（3 篇），<a href="https://2026.ieee-iros.org/" target="_blank" rel="noreferrer">IROS 2026</a>（2 篇），<a href="https://icml.cc/Conferences/2026" target="_blank" rel="noreferrer">ICML 2026</a>（6 篇，<strong>Golden Reviewer</strong>），<a href="https://aaai.org/conference/aaai/aaai-26/" target="_blank" rel="noreferrer">AAAI 2026</a>（4 篇），<a href="https://iros25.org/" target="_blank" rel="noreferrer">IROS 2025</a>（1 篇）',
     },
     footer: {
       credit: "由 Litao Liu 设计并维护。",
