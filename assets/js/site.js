@@ -649,7 +649,7 @@ function renderPublicationFilters() {
   const filter = document.getElementById("publicationFilters");
   filter.innerHTML = years
     .map((year) => {
-      const label = year === "all" ? t("ui.allYears") : year;
+      const label = year === "all" ? `${t("ui.allYears")} (${publications.length})` : year;
       return `<button class="filter-pill ${state.publicationYear === year ? "is-active" : ""}" type="button" data-year="${year}">${label}</button>`;
     })
     .join("");
