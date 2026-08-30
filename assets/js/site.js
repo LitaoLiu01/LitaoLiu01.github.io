@@ -222,6 +222,79 @@ const news = [
 
 const publications = [
   {
+    id: "a2a",
+    year: "2026",
+    label: "P1",
+    title: "Affordance2Action: Task-Conditioned Scene-level Affordance Grounding for Real-Time Manipulation",
+    authors: "<strong>Litao Liu</strong>, Yifan Han, Pengfei Yi, Wenbo Yu, Hanqing Wang, Haoran Du, Enze Yuan, Zilin Yuan, Ruiding Feng, Michael Liu, Qi Zhang, Jingjin Yu",
+    venue: "Under Review",
+    links: [
+      ["arxiv", "https://arxiv.org/abs/2606.04172"],
+      ["homepage", "https://jingjinyu.com/a2a/"],
+    ],
+    abstract: "Affordance2Action (A2A) studies scene-level, task-conditioned part affordance grounding for manipulation. It introduces A2A-Bench, covering both single-region and multi-region instruction correspondences in everyday scenes, together with an agent-assisted annotation pipeline and real-time grounding models that provide spatial priors for downstream manipulation policies.",
+    bibtex: `@misc{liu2026affordance2action,
+  title={Affordance2Action: Task-Conditioned Scene-level Affordance Grounding for Real-Time Manipulation},
+  author={Litao Liu and Yifan Han and Pengfei Yi and Wenbo Yu and Hanqing Wang and Haoran Du and Enze Yuan and Zilin Yuan and Ruiding Feng and Michael Liu and Qi Zhang and Jingjin Yu},
+  year={2026},
+  eprint={2606.04172},
+  archivePrefix={arXiv},
+  primaryClass={cs.RO},
+  url={https://arxiv.org/abs/2606.04172}
+}`,
+  },
+  {
+    id: "foresight-residual-rl",
+    year: "2026",
+    label: "C3",
+    title: "Foresight Residual RL for Long-Horizon Robot Manipulation with Vision-Language-Action Models",
+    authors: "Yuhan Liu, Xinyu Zhang, <strong>Litao Liu</strong>, Abdeslam Boularias",
+    venue: "IROS 2026",
+    links: [["arxiv", "https://arxiv.org/abs/2607.16506"]],
+    abstract: "Foresight Residual RL improves long-horizon, contact-rich manipulation by optimizing the quality of states passed between subtasks. It augments sparse success rewards with an offline-estimated foresight value and trains residual policies through backward foresight induction, substantially improving full-task success on a multi-phase nut-tightening assembly task.",
+    bibtex: `@inproceedings{liu2026foresight,
+  title={Foresight Residual RL for Long-Horizon Robot Manipulation with Vision-Language-Action Models},
+  author={Yuhan Liu and Xinyu Zhang and Litao Liu and Abdeslam Boularias},
+  booktitle={IEEE/RSJ International Conference on Intelligent Robots and Systems},
+  year={2026},
+  url={https://arxiv.org/abs/2607.16506}
+}`,
+  },
+  {
+    id: "dygro-vla",
+    year: "2026",
+    label: "C2",
+    title: "DyGRO-VLA: Cross-Task Scaling of Vision-Language-Action Models via Dynamic Grouped Residual Optimization",
+    authors: "Sixu Lin, Yunpeng Qing, <strong>Litao Liu</strong>, Ming Zhou, Ruixing Jin, Xiaoyi Fan, Guiliang Liu",
+    venue: "ICML 2026",
+    links: [["arxiv", "https://arxiv.org/abs/2605.17486"]],
+    abstract: "DyGRO-VLA is a two-stage reinforcement-learning framework for improving VLA policies across multiple tasks. It learns cross-task latent representations using information-theoretic objectives and dynamically refines the policy through a mixture of RL residuals, improving multi-task performance and robustness under distribution shift in simulation and real-world experiments.",
+    bibtex: `@inproceedings{lin2026dygrovla,
+  title={DyGRO-VLA: Cross-Task Scaling of Vision-Language-Action Models via Dynamic Grouped Residual Optimization},
+  author={Sixu Lin and Yunpeng Qing and Litao Liu and Ming Zhou and Ruixing Jin and Xiaoyi Fan and Guiliang Liu},
+  booktitle={International Conference on Machine Learning},
+  year={2026},
+  url={https://arxiv.org/abs/2605.17486}
+}`,
+  },
+  {
+    id: "bitrajdiff",
+    year: "2026",
+    label: "C1",
+    title: "BiTrajDiff: Bidirectional Trajectory Generation with Diffusion Models for Offline Reinforcement Learning",
+    authors: "Yunpeng Qing, Yixiao Chi, Shuo Chen, Shunyu Liu, Kexuan Zhou, Sixu Lin, <strong>Litao Liu</strong>, Changqing Zou",
+    venue: "ICML 2026",
+    links: [["arxiv", "https://arxiv.org/abs/2506.05762"]],
+    abstract: "BiTrajDiff augments offline reinforcement-learning datasets by generating both future and historical trajectories from intermediate states. Its complementary forward and backward diffusion processes expand behavior around critical states, improving dataset diversity and downstream policy performance across D4RL tasks and multiple offline RL backbones.",
+    bibtex: `@inproceedings{qing2026bitrajdiff,
+  title={BiTrajDiff: Bidirectional Trajectory Generation with Diffusion Models for Offline Reinforcement Learning},
+  author={Yunpeng Qing and Yixiao Chi and Shuo Chen and Shunyu Liu and Kexuan Zhou and Sixu Lin and Litao Liu and Changqing Zou},
+  booktitle={International Conference on Machine Learning},
+  year={2026},
+  url={https://arxiv.org/abs/2506.05762}
+}`,
+  },
+  {
     id: "foam",
     year: "2025",
     label: "C1",
@@ -693,7 +766,6 @@ function renderAll() {
   renderNews();
   renderPublicationFilters();
   renderPublications();
-  renderProjects();
   renderTeaching();
 }
 
