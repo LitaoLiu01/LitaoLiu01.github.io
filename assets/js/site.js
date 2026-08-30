@@ -99,7 +99,7 @@ const translations = {
     },
     profile: {
       role: "计算机科学博士生",
-      school: '<a href="https://www.rutgers.edu/" target="_blank" rel="noreferrer">罗格斯大学新布朗斯维克校区</a>',
+      school: '<a href="https://www.rutgers.edu/" target="_blank" rel="noreferrer">罗格斯大学新布朗斯维克</a>',
     },
     sections: {
       aboutEyebrow: "个人简介",
@@ -121,7 +121,7 @@ const translations = {
       teachingTitle: "教学经历",
     },
     about: {
-      p1: '我目前是<a href="https://www.rutgers.edu/" target="_blank" rel="noreferrer">罗格斯大学新布朗斯维克校区</a><a href="https://www.cs.rutgers.edu/" target="_blank" rel="noreferrer">计算机科学系</a>一年级博士生，导师是 <a href="https://arc-l.github.io/" target="_blank" rel="noreferrer">Jingjin Yu</a> 教授。我的研究兴趣位于人工智能与机器人学的交叉领域，主要关注机器人学习、机器人操作、强化学习以及视觉-语言-动作模型。',
+      p1: '我目前是<a href="https://www.rutgers.edu/" target="_blank" rel="noreferrer">罗格斯大学新布朗斯维克</a><a href="https://www.cs.rutgers.edu/" target="_blank" rel="noreferrer">计算机科学系</a>一年级博士生，导师是 <a href="https://arc-l.github.io/" target="_blank" rel="noreferrer">Jingjin Yu</a> 教授。我的研究兴趣位于人工智能与机器人学的交叉领域，主要关注机器人学习、机器人操作、强化学习以及视觉-语言-动作模型。',
       p2: '我于 2023 年获得<a href="https://en.scu.edu.cn/" target="_blank" rel="noreferrer">四川大学</a>工学学士学位。作为第一代大学生，我的学术道路充满探索与不确定性，也因此更加珍惜多位导师在关键阶段给予的指导。他们帮助我建立了对深入研究和认真教学的理解。',
       p3: '本科毕业后，我曾共同创办留学申请咨询公司 <a href="assets/docs/other/toworld.pdf" target="_blank" rel="noreferrer">ToWorld</a>，致力于帮助大学生，尤其是来自信息资源相对不足背景的学生，降低信息差并追求海外研究生教育机会。',
       p4: '我欢迎相关研究合作机会。欢迎通过 <a class="highlight-email" href="mailto:litao.liu@rutgers.edu">litao.liu@rutgers.edu</a> 联系我。',
@@ -181,7 +181,7 @@ const news = [
   {
     date: "2025-08-24",
     en: 'Started my Ph.D. journey at the <a href="https://arc-l.github.io/" target="_blank" rel="noreferrer">ARC Lab</a>, advised by Prof. Jingjin Yu at Rutgers University-New Brunswick.',
-    zh: '加入罗格斯大学新布朗斯维克校区 <a href="https://arc-l.github.io/" target="_blank" rel="noreferrer">ARC Lab</a>，在 Jingjin Yu 教授指导下开始博士学习。',
+    zh: '加入罗格斯大学新布朗斯维克 <a href="https://arc-l.github.io/" target="_blank" rel="noreferrer">ARC Lab</a>，在 Jingjin Yu 教授指导下开始博士学习。',
   },
   {
     date: "2025-03",
