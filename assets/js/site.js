@@ -164,6 +164,11 @@ const translations = {
 
 const news = [
   {
+    date: "2026-09-01",
+    en: 'Started as an exchange graduate student at <a href="https://www.princeton.edu/" target="_blank" rel="noreferrer">Princeton University</a>.',
+    zh: '作为交换研究生（Exchange Graduate Student）开始在<a href="https://www.princeton.edu/" target="_blank" rel="noreferrer">普林斯顿大学</a>的学习。',
+  },
+  {
     date: "2026-05",
     en: 'Three papers were accepted by ICML 2026. Congratulations to all co-authors. I was also honored with the ICML 2026 Gold Reviewer Award.',
     zh: "三篇论文被 ICML 2026 接收。祝贺所有合作者。我也获得了 ICML 2026 Gold Reviewer Award。",
